@@ -19,10 +19,8 @@
       color: white;
     }
     footer {
-      bottom: 10px;
       padding: 20px 100px;
       background: rgba(255, 255, 255, .55);
-      margin-top: -200px;
     }
     nav { font-family: 'Roboto Slab', serif }
     nav a { margin: 0 10px }
@@ -42,14 +40,10 @@
       justify-content: space-between;
       flex-wrap: wrap;
     }
-    main {
-      overflow: auto;
-      position: static;
-      min-height: 100vh;
-    }
+    main { position: relative }
     .container {
       max-width: 900px;
-      margin: 80px auto 200px;
+      margin: 0 auto;
     }
     button {
       width: 250px;
@@ -59,7 +53,6 @@
       background: white;
       text-align: center;
       border: none;
-      z-index: 1;
     }
     button:hover {
       cursor: pointer;
@@ -67,47 +60,23 @@
     }
     .hidden { display: none }
     #modal {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      margin: 64px auto 0;
+      margin: auto;
       max-width: 900px;
       background-color: white;
       border-radius: 10px;
     }
-    #modal h2{
-      position: fixed;
-      background-color: white;
-      max-width: 900px;
-      margin-top: 0;
-      width: 900px;
-    }
     .team {
       display: flex;
-      overflow: scroll;
       justify-content: space-evenly;
       flex-wrap: wrap;
-      margin-top: 60px;
     }
     .person {
-      width: 100%;
-      border-radius: 50%;
-    }
-    figure{
-      margin: 0 0 10px;
       width: 26%;
-    }
-    figure figcaption{
-      text-align: center;
-      visibility: hidden;
-    }
-    figure img{
-      width: 100%;
-      height: 90%;
-    }
-    img:hover + figcaption{
-      visibility: visible;
+      margin-bottom: 20px;
     }
     footer nav {
       display: flex;
@@ -142,89 +111,31 @@
     <div>Cum quam repellendus vero vitae. Asperiores assumenda dolorem illum minus ullam, veritatis voluptatum. Commodi
       dolorem et incidunt reiciendis rem. Enim esse est libero optio reiciendis sequi, sint soluta ullam ut?
     </div>
-
     <button id="show">Дізнатись більше про нас</button>
   </div>
   <div id="modal" class="hidden">
-    <button class="hide" style="width: 20px; height: 20px; float: right; position: relative; padding: 0; margin: 0; z-index: 0"><img src="images/cross.png" width="20px" height="20px" alt="close"></button>
     <h2>Наша супер-команда</h2>
     <div class="team">
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=1" alt="Pauline R. Skiles" class="person" data-name="Pauline R. Skiles">
-        <figcaption>Pauline R. Skiles</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=2" alt="Barbara T. Francisco" class="person" data-name="Barbara T. Francisco">
-        <figcaption>Barbara T. Francisco</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=3" alt="Anna R. Jones" class="person" data-name="Anna R. Jones">
-        <figcaption>Anna R. Jones</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=4" alt="Ralph G. Gardner" class="person" data-name="Ralph G. Gardner">
-        <figcaption>Ralph G. Gardner</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=5" alt="Brain A. Prim" class="person" data-name="Brain A. Prim">
-        <figcaption>Brain A. Prim</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=6" alt="George M. Proffitt" class="person" data-name="George M. Proffitt">
-        <figcaption>George M. Proffitt</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=7" alt="Karen S. Carter" class="person" data-name="Karen S. Carter">
-        <figcaption>Karen S. Carter</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=8" alt="James P. Russo" class="person" data-name="James P. Russo">
-        <figcaption>James P. Russo</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=9" alt="Rebecca J. Giordano" class="person" data-name="Rebecca J. Giordano">
-        <figcaption>Rebecca J. Giordano</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=10" alt="Thomas P. Swett" class="person" data-name="Thomas P. Swett">
-        <figcaption>Thomas P. Swett</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=11" alt="Tiffany N. Gardner" class="person" data-name="Tiffany N. Gardner">
-        <figcaption>Tiffany N. Gardner</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=12" alt="Jessica D. Musgrove" class="person" data-name="Jessica D. Musgrove">
-        <figcaption>Jessica D. Musgrove</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=14" alt="Edward T. Tovar" class="person" data-name="Edward T. Tovar">
-        <figcaption>Edward T. Tovar</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=15" alt="Jacqueline G. Robles" class="person" data-name="Jacqueline G. Robles">
-        <figcaption>Jacqueline G. Robles</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=16" alt="Betty D. Phillips" class="person" data-name="Betty D. Phillips">
-        <figcaption>Betty D. Phillips</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=17" alt="William C. Baker" class="person" data-name="William C. Baker">
-        <figcaption>William C. Baker</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=18" alt="Lauren D. Baize" class="person" data-name="Lauren D. Baize">
-        <figcaption>Lauren D. Baize</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=19" alt="Terry S. Nelson" class="person" data-name="Terry S. Nelson">
-        <figcaption>Terry S. Nelson</figcaption>
-      </figure>
-      <figure>
-        <img src="https://loremflickr.com/100/80?lock=20" alt="Dorothy D. Battaglia" class="person" data-name="Dorothy D. Battaglia">
-        <figcaption>Dorothy D. Battaglia</figcaption>
-      </figure>
+      <img src="https://loremflickr.com/100/80?lock=1" class="person" data-name="Pauline R. Skiles">
+      <img src="https://loremflickr.com/100/80?lock=2" class="person" data-name="Barbara T. Francisco">
+      <img src="https://loremflickr.com/100/80?lock=3" class="person" data-name="Anna R. Jones">
+      <img src="https://loremflickr.com/100/80?lock=4" class="person" data-name="Ralph G. Gardner">
+      <img src="https://loremflickr.com/100/80?lock=5" class="person" data-name="Brain A. Prim">
+      <img src="https://loremflickr.com/100/80?lock=6" class="person" data-name="George M. Proffitt">
+      <img src="https://loremflickr.com/100/80?lock=7" class="person" data-name="Karen S. Carter">
+      <img src="https://loremflickr.com/100/80?lock=8" class="person" data-name="James P. Russo">
+      <img src="https://loremflickr.com/100/80?lock=9" class="person" data-name="Rebecca J. Giordano">
+      <img src="https://loremflickr.com/100/80?lock=10" class="person" data-name="Thomas P. Swett">
+      <img src="https://loremflickr.com/100/80?lock=11" class="person" data-name="Tiffany N. Gardner">
+      <img src="https://loremflickr.com/100/80?lock=12" class="person" data-name="Jessica D. Musgrove">
+      <img src="https://loremflickr.com/100/80?lock=13" class="person" data-name="Henry B. Johnson">
+      <img src="https://loremflickr.com/100/80?lock=14" class="person" data-name="Edward T. Tovar">
+      <img src="https://loremflickr.com/100/80?lock=15" class="person" data-name="Jacqueline G. Robles">
+      <img src="https://loremflickr.com/100/80?lock=16" class="person" data-name="Betty D. Phillips">
+      <img src="https://loremflickr.com/100/80?lock=17" class="person" data-name="William C. Baker">
+      <img src="https://loremflickr.com/100/80?lock=18" class="person" data-name="Lauren D. Baize">
+      <img src="https://loremflickr.com/100/80?lock=19" class="person" data-name="Terry S. Nelson">
+      <img src="https://loremflickr.com/100/80?lock=20" class="person" data-name="Dorothy D. Battaglia">
     </div>
     <button class="hide">Крута у вас команда!</button>
   </div>
