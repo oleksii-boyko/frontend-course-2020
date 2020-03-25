@@ -15,7 +15,7 @@
       width: calc(100% - 40px);
       padding: 20px;
       background: #222222;
-      z-index: 1;
+      z-index: 2;
       color: white;
     }
     footer {
@@ -89,6 +89,8 @@
       justify-content: space-evenly;
       flex-wrap: wrap;
       margin-top: 60px;
+      max-height: 75vh;
+      margin-bottom: 100px;
     }
     .person {
       width: 100%;
@@ -145,9 +147,8 @@
     <button id="show">Дізнатись більше про нас</button>
   </div>
   <div id="modal" class="hidden">
-    <button class="hide" style="width: 20px; height: 20px; float: right; position: relative; padding: 0; margin: 0; z-index: 0">
-      <img src="images/cross.png" width="20px" height="20px" alt="close"></button>
-    <h2>Наша супер-команда</h2>
+    <h2>Наша супер-команда<button class="hide" style="width: 20px; height: 20px; float: right; padding: 0; margin: 0; z-index: 1">
+      <img src="images/cross.png" width="20px" height="20px" alt="close"></button></h2>
     <div class="team">
       <figure>
         <img src="https://loremflickr.com/100/80?lock=1" alt="Pauline R. Skiles" class="person" data-name="Pauline R. Skiles">
@@ -226,7 +227,7 @@
         <figcaption>Dorothy D. Battaglia</figcaption>
       </figure>
     </div>
-    <button class="hide">Крута у вас команда!</button>
+    <button class="hide" style="margin-top: -100px">Крута у вас команда!</button>
   </div>
 </main>
 <footer>
