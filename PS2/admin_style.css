@@ -1,0 +1,27 @@
+.navbar{
+  padding: 0;
+}
+
+.navbar .navbar-brand{
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.navbar .form-control{
+  border-radius: 0;
+  border: unset;
+  opacity: 0.5;
+}
+
+.navbar .form-control:focus{
+  opacity: 1;
+  outline: none;
+}
+
+.form-inline{
+  padding: 0;
+}
+
+.navbar .nav-link{
+  padding: 0 0 0 1vh;
+}
