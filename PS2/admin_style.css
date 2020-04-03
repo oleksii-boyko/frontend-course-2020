@@ -25,3 +25,11 @@
 .navbar .nav-link{
   padding: 0 0 0 1vh;
 }
+
+.sidebar .nav-link{
+  color: black;
+}
+
+.sidebar .nav-link.active{
+  color: blue;
+}
