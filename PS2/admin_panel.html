@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin panel</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/079a7a16d8.js" crossorigin="anonymous"></script>
+  <link href="admin_style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Top navigation bar -->
+<div class="navbar navbar-dark bg-dark sticky-top shadow">
+  <div class="navbar-brand col-2">TravelUp</div>
+  <div class="form-inline col-10">
+    <input class="form-control form-control-dark col-11" type="search" placeholder="Search" aria-label="SearchBar">
+    <div class="col-1 navbar-nav text-nowrap">
+      <a class="nav-item nav-link" href="#">Sign Out</a>
+    </div>
+  </div>
+</div>
+<!-- MAIN PAGE CONTENT -->
+<div class="container-fluid row">
+  <!-- Left navigation bar -->
+  <div class="col-2 sidebar sidebar-sticky bg-light">
+    <ul class="nav text-nowrap flex-column">
+      <li>
+        <a class="nav-link nav-item" href="#">
+          <i class="far fa-file"></i> Orders
+        </a>
+      </li>
+      <li>
+        <a class="nav-link nav-item" href="#">
+          <i class="fas fa-shopping-cart"></i> Products
+        </a>
+      </li>
+      <li>
+        <a class="nav-link active nav-item" href="#">
+          <i class="fas fa-users"></i> Customers
+        </a>
+      </li>
+      <li>
+        <a class="nav-link nav-item" href="#">
+          <i class="fas fa-chart-bar"></i> Reports
+        </a>
+      </li>
+      <li>
+        <a class="nav-link nav-item" href="#">
+          <i class="fas fa-layer-group"></i> Integrations
+        </a>
+      </li>
+    </ul>
+    <h6 class="sidebar-heading d-flex justify-content-between align-items-center text-muted pr-2 pl-3 mt-3">
+      SAVED REPORTS <a href="#" class="text-muted"><i class="fas fa-plus-circle"></i></a>
+    </h6>
+    <ul class="nav text-nowrap flex-column">
+      <li>
+        <a class="nav-link nav-item" href="#">
+          <i class="far fa-file-alt"></i> Current month
+        </a>
+      </li>
+      <li>
+        <a class="nav-link nav-item" href="#">
+          <i class="far fa-file-alt"></i> Last quarter
+        </a>
+      </li>
+      <li>
+        <a class="nav-link nav-item" href="#">
+          <i class="far fa-file-alt"></i> Social engagement
+        </a>
+      </li>
+      <li>
+        <a class="nav-link nav-item" href="#">
+          <i class="far fa-file-alt"></i> Year-end-sale
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- Table -->
+  <div class="col-10">
+    <!-- Table header -->
+    <div class="d-flex justify-content-between align-items-center mt-3 mb-3">
+      <h1>Customers</h1>
+      <div class="btn-toolbar">
+        <div class="btn-group mr-2">
+          <button type="button" class="btn btn-outline-secondary btn-sm">Share</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm">Export</button>
+        </div>
+        <button type="button" class="btn dropdown-toggle btn-outline-secondary btn-sm">
+          <i class="far fa-calendar"></i> This week
+        </button>
+      </div>
+    </div>
+    <!-- Table itself -->
+    <table class="table table-striped table-sm">
+      <thead>
+      <tr>
+        <th><input type="checkbox" aria-label="choose"></th>
+        <th>#</th>
+        <th>Name Surname</th>
+        <th class="text-right">Age</th>
+        <th>City</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tr>
+        <td><input type="checkbox" aria-label="choose"></td>
+        <td>1,001</td>
+        <td>Lorem</td>
+        <td class="text-right">18</td>
+        <td>London</td>
+        <td>single</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" aria-label="choose"></td>
+        <td>1,002</td>
+        <td>Amet</td>
+        <td class="text-right">45</td>
+        <td>Birmingham</td>
+        <td>single</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" aria-label="choose"></td>
+        <td>1,003</td>
+        <td>Integer</td>
+        <td class="text-right">13</td>
+        <td>Plymouth</td>
+        <td>married</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+          </div>
+        </td>
+      </tr>
+      <tr class="bg-success text-white">
+        <td><input type="checkbox" aria-label="choose"></td>
+        <td>1,003</td>
+        <td>Libero</td>
+        <td class="text-right">49</td>
+        <td>Belfast</td>
+        <td>divorced</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" aria-label="choose"></td>
+        <td>1,004</td>
+        <td>Dapibus</td>
+        <td class="text-right">34</td>
+        <td>Liverpool</td>
+        <td>single</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" aria-label="choose"></td>
+        <td>1,005</td>
+        <td>Nulla</td>
+        <td class="text-right">18</td>
+        <td>Manchester</td>
+        <td>divorced</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" aria-label="choose"></td>
+        <td>1,006</td>
+        <td>Nibh</td>
+        <td class="text-right">23</td>
+        <td>Glasgow</td>
+        <td>divorced</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" aria-label="choose"></td>
+        <td>1,007</td>
+        <td>Sagittis</td>
+        <td class="text-right">15</td>
+        <td>Edinburgh</td>
+        <td>single</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" aria-label="choose"></td>
+        <td>1,008</td>
+        <td>Fusce</td>
+        <td class="text-right">20</td>
+        <td>London</td>
+        <td>married</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" aria-label="choose"></td>
+        <td>1,009</td>
+        <td>Augue</td>
+        <td class="text-right">35</td>
+        <td>Cambridge</td>
+        <td>single</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" aria-label="choose"></td>
+        <td>1,010</td>
+        <td>Massa</td>
+        <td class="text-right">41</td>
+        <td>London</td>
+        <td>single</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <!-- Pagination -->
+    <div>
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
